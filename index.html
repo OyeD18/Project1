@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+  <head>
+    <meta charset="utf-8">
+    <title>The Gallery</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Italianno&display=swap" rel="stylesheet">
+    <style>
+      body {
+        color: #000000;
+        background-color: #FDC56A;
+        background-position: center;
+        margin: 0px;
+        font-family: 'Indie Flower', cursive;
+        text-align: center;
+      }
+      .wrapper {
+        background-color: #FFF4E3;
+        width: 92%;
+        max-width: 1200px;
+        margin: 20px auto;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      #header {
+        height: auto;
+        background-color: #FFF4E3;
+      }
+
+      h1 {
+        margin: 10px 0;
+      }
+
+      .italianno {
+        font-family: 'Italianno', cursive;
+        font-size: 8em;
+        font-weight: 300;
+        margin: 0;
+      }
+      
+      #nav {
+        clear: both;
+        padding: 46.5 0;
+        margin-top: 46.5px;
+      }
+
+      #nav ul {
+        border-top: 2px solid #000;
+        border-bottom: 2px solid #000;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        background-color: #FFFFFF;
+      }
+
+      #nav li {
+        margin: 0 20px;
+      }
+
+      #nav a {
+        text-decoration: none;
+        color: #000000;
+        font-size: 1.2em;
+        padding: 10px 20px;
+        display: block;
+        transition: color 0.3s ease;
+      }
+
+      #nav a:hover {
+        color: #FDC56A;
+      }
+
+      .introduction {
+        margin: 40px 0;
+      }
+
+      .introduction p {
+        font-size: 1.2em;
+        line-height: 1.6em;
+        margin: 0 20px;
+      }
+
+      .section-title {
+        font-size: 1.5em;
+        margin: 30px 0 10px;
+        font-weight: bold;
+      }
+
+      .separator {
+        border: none;
+        border-top: 2px solid #333;
+        margin: 30px 0;
+      }
+
+      .hobbies, .contact-me {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        flex-wrap: wrap;
+      }
+
+      .hobbies div, .contact-me div {
+        text-align: center;
+        margin: 10px;
+      }
+
+      .hobbies img, .contact-me img {
+        width: 80px;
+        height: 80px;
+        margin-bottom: 10px;
+      }
+      
+      .contact-container img {
+        width: 50px;
+        height: 50px;
+        transition: transform 0.2s;
+      }
+
+      .contact-container img:hover {
+        transform: scale(1.2);
+      }
+      
+      .contact-container { 
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        column-gap: 50px;
+        margin-top: 40px;
+        }
+     
+      
+      #header img {
+        float: right;
+        width: 50%; 
+        max-width: 150px;
+        margin: -7.6% 24.25%;
+        padding: 0;
+        border-radius: 0px;
+        vertical-align: bottom;
+      }
+      
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 20px 0;
+      }
+
+      th, td {
+        border: 1px solid black;
+        padding: 10px;
+        text-align: left;
+        background-color: #FFFFFF
+      }
+      
+      th {
+        background-color: #FDC56A;
+        color: #000
+      }
+      
+
+
+
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div id="header">
+        <h1>Dolapo Ajiboye</h1>
+        <h1 class="italianno">Portfolio</h1>   
+        <img src="hand.png" alt="hand">
+        <div id="nav">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="https://oyed18.github.io/Gallery-Illustrations/">Illustrations</a></li>
+            <li><a href="https://oyed18.github.io/Gallery-UI-Design/">UI Design</a></li>
+            <li><a href="https://oyed18.github.io/Gallery-3D-Modelling/">3D Modelling</a></li>
+            <li><a href="https://oyed18.github.io/Gallery-Animations/">Animations</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="introduction">
+        <div class="separator"></div>
+        <h2>Hello!</h2>
+        <p>
+          My name is Oyedolapo Ajiboye, but you can call me Dolapo. 
+          I'm a second-year University of Waterloo student studying Global Business and Digital Arts (GBDA). 
+          I'm passionate about illustration and graphic design, and always ready to work with others with similar interests.
+          Welcome to my portfolio.
+        </p>
+        <div class="separator"></div>
+      </div>
+      
+      <div>
+        <h2 class="section-title">Skills</h2>
+        <table>
+          <tr>
+            <th>Adobe Illustrator &amp; Animate</th>
+            <th>Blender &amp; Maya</th>
+            <th>Figma</th>
+            <th>Coding</th>
+          </tr>
+          <tr>
+            <td>
+              <p>
+                <b>Logo Project</b><br>
+                - (Casey's Panda) was made through Illustrator<br>
+                <b>Character Walk Cycle</b><br>
+                - Created through sketches in Illustrator and animated in Adobe Animate<br>
+                - Made other 2D animations using the same softwear
+              </p>
+            </td>
+            <td>
+              <p>
+                <b>3D</b><br>
+                - Worked on several personal projects using Blender<br>
+                - Made a few animations in Maya
+              </p>
+            </td>
+            <td>
+              <p>
+                <b>YAP(group app)</b><br>
+                - Designed and prototyped apps and websites
+              </p>
+            </td>
+            <td>
+              <p>
+                <b>This Website</b><br>
+                - Made using my knowledge of HTML leart in class and my free time<br>
+              </p>
+            </td>
+          </tr>
+        </table>
+        
+        <h2 class="section-title">Hobbies</h2>
+        <div class="hobbies">
+          <div>
+            <img src="paint.png" alt="Drawing">
+            <p>Drawing</p>
+          </div>
+          <div>
+            <img src="gg.png" alt="Gaming">
+            <p>Gaming</p>
+          </div>
+          <div>
+            <img src="sk8.png" alt="Skateboarding">
+            <p>Skateboarding</p>
+          </div>
+        </div>
+        <div class="separator"></div>
+      </div>
+
+      <div>
+        <h2 class="section-title">Contact Me</h2>
+        <div class="contact-container">
+          <a href="mailto:dajiboye@uwaterloo.ca">
+            <img src="mail.png" alt="Email Icon">
+          </a>
+          <a href="https://www.instagram.com/oyedolapoajiboye/" target="_blank">
+            <img src="instagram.png" alt="Instagram Icon">
+          </a>
+        </div>
+        <div class="separator"></div>
+      </div>
+    </div>
+  </body>
+</html>
