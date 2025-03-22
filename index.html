@@ -1,271 +1,173 @@
 <!DOCTYPE html>
 <html lang="en-CA">
-  <head>
+<head>
     <meta charset="utf-8">
-    <title>The Gallery</title>
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Italianno&display=swap" rel="stylesheet">
+    <title>Project Description - YAP</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kalnia:wght@400;700&family=KoHo:wght@300;400&display=swap" rel="stylesheet">
     <style>
-      body {
-        color: #000000;
-        background-color: #FDC56A;
-        background-position: center;
-        margin: 0px;
-        font-family: 'Indie Flower', cursive;
-        text-align: center;
-      }
-      .wrapper {
-        background-color: #FFF4E3;
-        width: 92%;
-        max-width: 1200px;
-        margin: 20px auto;
-        padding: 20px;
-        border-radius: 10px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      }
-
-      #header {
-        height: auto;
-        background-color: #FFF4E3;
-      }
-
-      h1 {
-        margin: 10px 0;
-      }
-
-      .italianno {
-        font-family: 'Italianno', cursive;
-        font-size: 8em;
-        font-weight: 300;
-        margin: 0;
-      }
-      
-      #nav {
-        clear: both;
-        padding: 46.5 0;
-        margin-top: 46.5px;
-      }
-
-      #nav ul {
-        border-top: 2px solid #000;
-        border-bottom: 2px solid #000;
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        justify-content: center;
-        background-color: #FFFFFF;
-      }
-
-      #nav li {
-        margin: 0 20px;
-      }
-
-      #nav a {
-        text-decoration: none;
-        color: #000000;
-        font-size: 1.2em;
-        padding: 10px 20px;
-        display: block;
-        transition: color 0.3s ease;
-      }
-
-      #nav a:hover {
-        color: #FDC56A;
-      }
-
-      .introduction {
-        margin: 40px 0;
-      }
-
-      .introduction p {
-        font-size: 1.2em;
-        line-height: 1.6em;
-        margin: 0 20px;
-      }
-
-      .section-title {
-        font-size: 1.5em;
-        margin: 30px 0 10px;
-        font-weight: bold;
-      }
-
-      .separator {
-        border: none;
-        border-top: 2px solid #333;
-        margin: 30px 0;
-      }
-
-      .hobbies, .contact-me {
-        display: flex;
-        justify-content: center;
-        gap: 30px;
-        flex-wrap: wrap;
-      }
-
-      .hobbies div, .contact-me div {
-        text-align: center;
-        margin: 10px;
-      }
-
-      .hobbies img, .contact-me img {
-        width: 80px;
-        height: 80px;
-        margin-bottom: 10px;
-      }
-      
-      .contact-container img {
-        width: 50px;
-        height: 50px;
-        transition: transform 0.2s;
-      }
-
-      .contact-container img:hover {
-        transform: scale(1.2);
-      }
-      
-      .contact-container { 
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        column-gap: 50px;
-        margin-top: 40px;
+        body {
+            color: #FFFFFF;
+            background-color: #8554D4;
+            margin: 0;
+            font-family: 'KoHo', sans-serif;
+            text-align: left;
         }
-     
-      
-      #header img {
-        float: right;
-        width: 50%; 
-        max-width: 150px;
-        margin: -7.6% 24.25%;
-        padding: 0;
-        border-radius: 0px;
-        vertical-align: bottom;
-      }
-      
-      table {
-        width: 100%;
-        border-collapse: collapse;
-        margin: 20px 0;
-      }
 
-      th, td {
-        border: 1px solid black;
-        padding: 10px;
-        text-align: left;
-        background-color: #FFFFFF
-      }
-      
-      th {
-        background-color: #FDC56A;
-        color: #000
-      }
-      
+        .wrapper {
+            background-color: #000000;
+            width: 92%;
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
 
+        .navbar {
+            background: #000000;
+            padding: 15px 40px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: #FFFFFF;
+            font-weight: bold;
+        }
 
+        .navbar a {
+            color: #FFFFFF;
+            text-decoration: none;
+            margin-left: 20px;
+        }
 
+        .navbar a:hover,
+        .navbar a.active {
+            color: #8554D4;
+        }
+
+        h1 {
+            font-family: 'Kalnia', serif;
+            font-size: 2.5em;
+            color: #8554D4;
+            margin-bottom: 10px;
+        }
+
+        .project-summary {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+
+        .info-section {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .info-box {
+            flex: 1;
+            background: #222;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 5px solid #8554D4;
+        }
+
+        .content-section {
+            margin-top: 30px;
+            padding: 20px;
+            border-left: 5px solid #8554D4;
+            border-radius: 8px;
+            background: #222;
+            color: #FFFFFF;
+        }
+
+        .highlight {
+            font-weight: bold;
+            color: #8554D4;
+        }
+
+        .project-image {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        a {
+            color: #8554D4;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
     </style>
-  </head>
-  <body>
+</head>
+<body>
     <div class="wrapper">
-      <div id="header">
-        <h1>Dolapo Ajiboye</h1>
-        <h1 class="italianno">Portfolio</h1>   
-        <img src="hand.png" alt="hand">
-        <div id="nav">
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="https://oyed18.github.io/Gallery-Illustrations/">Illustrations</a></li>
-            <li><a href="https://oyed18.github.io/Gallery-UI-Design/">UI Design</a></li>
-            <li><a href="https://oyed18.github.io/Gallery-3D-Modelling/">3D Modelling</a></li>
-            <li><a href="https://oyed18.github.io/Gallery-Animations/">Animations</a></li>
-          </ul>
+        <div class="navbar">
+            <div>Project Portfolio</div>
+            <div>
+                <a href="https://oyed18.github.io/Portfolio/" class="home">Home</a>
+                <a href="https://oyed18.github.io/Folio-Illustrations/" class="illustrations">Illustrations</a>
+                <a href="https://oyed18.github.io/Folio-Animations/" class="animations">Animations</a>
+                <a href="https://oyed18.github.io/Folio-3D/" class="threeD">3D Modelling</a>
+                <a href="#" class="projects active">Projects</a>
+            </div>
         </div>
-      </div>
-      
-      <div class="introduction">
-        <div class="separator"></div>
-        <h2>Hello!</h2>
-        <p>
-          My name is Oyedolapo Ajiboye, but you can call me Dolapo. 
-          I'm a second-year University of Waterloo student studying Global Business and Digital Arts (GBDA). 
-          I'm passionate about illustration and graphic design, and always ready to work with others with similar interests.
-          Welcome to my portfolio.
-        </p>
-        <div class="separator"></div>
-      </div>
-      
-      <div>
-        <h2 class="section-title">Skills</h2>
-        <table>
-          <tr>
-            <th>Adobe Illustrator &amp; Animate</th>
-            <th>Blender &amp; Maya</th>
-            <th>Figma</th>
-            <th>Coding</th>
-          </tr>
-          <tr>
-            <td>
-              <p>
-                <b>Logo Project</b><br>
-                - (Casey's Panda) was made through Illustrator<br>
-                <b>Character Walk Cycle</b><br>
-                - Created through sketches in Illustrator and animated in Adobe Animate<br>
-                - Made other 2D animations using the same softwear
-              </p>
-            </td>
-            <td>
-              <p>
-                <b>3D</b><br>
-                - Worked on several personal projects using Blender<br>
-                - Made a few animations in Maya
-              </p>
-            </td>
-            <td>
-              <p>
-                <b>YAP(group app)</b><br>
-                - Designed and prototyped apps and websites
-              </p>
-            </td>
-            <td>
-              <p>
-                <b>This Website</b><br>
-                - Made using my knowledge of HTML leart in class and my free time<br>
-              </p>
-            </td>
-          </tr>
-        </table>
-        
-        <h2 class="section-title">Hobbies</h2>
-        <div class="hobbies">
-          <div>
-            <img src="paint.png" alt="Drawing">
-            <p>Drawing</p>
-          </div>
-          <div>
-            <img src="gg.png" alt="Gaming">
-            <p>Gaming</p>
-          </div>
-          <div>
-            <img src="sk8.png" alt="Skateboarding">
-            <p>Skateboarding</p>
-          </div>
-        </div>
-        <div class="separator"></div>
-      </div>
 
-      <div>
-        <h2 class="section-title">Contact Me</h2>
-        <div class="contact-container">
-          <a href="mailto:dajiboye@uwaterloo.ca">
-            <img src="mail.png" alt="Email Icon">
-          </a>
-          <a href="https://www.instagram.com/oyedolapoajiboye/" target="_blank">
-            <img src="instagram.png" alt="Instagram Icon">
-          </a>
+        <h1>YAP - Roommate Connection App</h1>
+        <p class="project-summary">A mobile application designed by university students to enhance communication and strengthen relationships through interactive, gamified experiences.</p>
+        <img src="yap-project-image.jpg" alt="YAP Project Screenshot" class="project-image">
+        
+        <div class="info-section">
+            <div class="info-box">
+                <h3>Role</h3>
+                <p><span class="highlight">UI/UX Designer</span> – I contributed to interface design, usability testing, and the refinement of prototypes. My focus was on translating low- and mid-fidelity wireframes into high-fidelity designs while ensuring smooth and intuitive navigation.</p>
+            </div>
+            <div class="info-box">
+                <h3>Scope</h3>
+                <p>Interaction design, wireframing, prototyping, and usability testing for a mobile roommate connection application.</p>
+            </div>
+            <div class="info-box">
+                <h3>Tools</h3>
+                <p>Figma, Adobe XD, Miro, Notion</p>
+            </div>
         </div>
-        <div class="separator"></div>
-      </div>
+
+        <div id="overview" class="content-section">
+            <h2>Background</h2>
+            <p>For this project, we were tasked with identifying a unique challenge that could be addressed through the development of an app. YAP was created to improve roommate relationships by facilitating meaningful conversations and engagement through interactive features.</p>
+        </div>
+
+        <div class="content-section">
+            <h2>Problem Statement</h2>
+            <p>Many university students face difficulties in communicating and forming meaningful relationships with their roommates. YAP addresses this issue by providing structured, engaging activities that promote deeper connections.</p>
+        </div>
+
+        <div id="process" class="content-section">
+            <h2>Design Process</h2>
+            <p>Our design process began with research and low-fidelity prototyping. Following usability testing in Milestone 2, we identified key areas for improvement, including enhanced search filters for discussion-based games and the integration of an Invite Friends feature to encourage broader participation.</p>
+        </div>
+
+        <div id="solution" class="content-section">
+            <h2>Solution</h2>
+            <p>YAP offers key features designed to foster better roommate relationships:</p>
+            <ul>
+                <li><span class="highlight">Invite Friends:</span> Users can add roommates, friends, or groups to interactive activities.</li>
+                <li><span class="highlight">Daily Question Prompt:</span> Thought-provoking questions help spark meaningful discussions.</li>
+                <li><span class="highlight">Gamified Interactions:</span> Fun and engaging activities encourage communication and bonding.</li>
+                <li><span class="highlight">Shared Memories:</span> Users can upload and share images, quotes, and significant moments to strengthen their connections.</li>
+                <li><span class="highlight">Insights & Analytics:</span> Personalized feedback provides insights into communication patterns and ways to improve interactions.</li>
+            </ul>
+        </div>
     </div>
-  </body>
+
+    <script>
+        // Add active class to the current navbar link
+        document.querySelectorAll('.navbar a').forEach(function(link) {
+            if (link.href === window.location.href) {
+                link.classList.add('active');
+            }
+        });
+    </script>
+</body>
 </html>
