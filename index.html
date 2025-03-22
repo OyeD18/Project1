@@ -51,6 +51,23 @@
         a:hover {
             text-decoration: underline;
         }
+      
+      .back-button {
+        background: none;
+        border: 2px solid #8554D4;
+        color: #8554D4;
+        padding: 10px 15px;
+        font-size: 1em;
+        cursor: pointer;
+        border-radius: 5px;
+        font-weight: bold;
+        margin-top: 20px;
+        display: inline-block;
+      }
+      .back-button:hover {
+        background: #8554D4;
+        color: white;
+      }
 
         h1 {
             font-family: 'Kalnia', serif;
@@ -112,6 +129,8 @@
                 <a href="#" class="projects active">Projects</a>
             </div>
         </div>
+      <button
+          onclick="window.location.href='https://oyed18.github.io/Folio-Projects/'" class="back-button">← Back to Projects</button>
 
         <h1>YAP - Roommate Connection App</h1>
         <p class="project-summary">A mobile ap designed by university students, for university students to enhance communication and strengthen relationships through interactive, gamified experiences.</p>
@@ -134,39 +153,56 @@
 
         <div id="overview" class="content-section">
             <h2>Background</h2>
-            <p>The core problem we aimed to solve was ineffective communication leading to misunderstandings and conflicts. Initially, our focus was on roommates struggling to get along. However, we quickly realized that the need for better communication extended beyond just shared living situations.<br>This led to the development of an interactive app with fun, game-based features designed to help people understand each other better and build meaningful connections. The app aims to break down first impressions, encourage deeper conversations, and promote open-minded interactions.</p>
+            <p>My group and I were tasked with finding a unique porblem, and then producing a service or product that would solve this problem for the users.<br>The core problem we aimed to solve was ineffective communication leading to misunderstandings and conflicts. Initially, our focus was on roommates struggling to get along. However, we quickly realized that the need for better communication extended beyond just shared living situations.<br>This led to the development of an interactive app with fun, game-based features designed to help people understand each other better and build meaningful connections. The app aims to break down first impressions, encourage deeper conversations, and promote open-minded interactions.</p>
         </div>
 
-        <div class="content-section">
-            <h2>Problem Statement</h2>
-            <p>Many university students face difficulties in communicating and forming meaningful relationships with their roommates. YAP addresses this issue by providing structured, engaging activities that promote deeper connections.</p>
-        </div>
+        
 
         <div id="process" class="content-section">
             <h2>Design Process</h2>
-            <p>Our design process began with research and low-fidelity prototyping. Following usability testing in Milestone 2, we identified key areas for improvement, including enhanced search filters for discussion-based games and the integration of an Invite Friends feature to encourage broader participation.</p>
+            <p>Our early ideas revolved around a general roommate-planning app that included task management and organizational features. However, we noticed our focus was too broad, resulting in disconnected features that failed to address the root causes of roommate conflicts—poor communication and lack of understanding. <br> After reevaluating our approach, we shifted our focus toward fostering connection and meaningful interactions. This shift transformed our app into a platform centered on improving communication rather than just managing roommate logistics.</p>
+        </div>
+      
+      <div class="content-section">
+            <h2>Core Features</h2>
+        <ol>
+          <span class="highlight"><li>Interactive "Getting to Know You" Games</li></span>
+          <p>Users can play mini-games that reveal personal insights, interests, and experiences. This creates a playful, pressure-free environment for users to bond and build rapport.</p>
+          <span class="highlight"><li>Daily Connection Prompts</li></span>
+          <p>Users receive a prompt encouraging conversation on thought-provoking topics or shared experiences daily. This habit-forming interaction helps strengthen relationships over time.</p>
+          <span class="highlight"><li>Shared Memories &amp Goals Tracker</li></span>
+          <p>Users can set and track goals or events such as cooking together, fitness challenges, or hobby exploration. Celebrating small wins together helps build a sense of teamwork and collaboration.</p>
+        </ol>
         </div>
 
         <div id="solution" class="content-section">
-            <h2>Solution</h2>
-            <p>YAP offers key features designed to foster better roommate relationships:</p>
+            <h2>Prototyping &amp Design Insights</h2>
+            <p>We began with low-fidelity prototypes, focusing on structure and functionality.</p>
             <ul>
-                <li><span class="highlight">Invite Friends:</span> Users can add roommates, friends, or groups to interactive activities.</li>
-                <li><span class="highlight">Daily Question Prompt:</span> Thought-provoking questions help spark meaningful discussions.</li>
-                <li><span class="highlight">Gamified Interactions:</span> Fun and engaging activities encourage communication and bonding.</li>
-                <li><span class="highlight">Shared Memories:</span> Users can upload and share images, quotes, and significant moments to strengthen their connections.</li>
-                <li><span class="highlight">Insights & Analytics:</span> Personalized feedback provides insights into communication patterns and ways to improve interactions.</li>
+                <li>Early designs focused too much on the interface rather than experience.</li>
+                <li>Competitive research (e.g., Lumosity) helped refine gamified elements.</li>
+                <li>Specificity in prototyping was essential for conveying unique features effectively.</li>
             </ul>
         </div>
-    </div>
-
-    <script>
-        // Add active class to the current navbar link
-        document.querySelectorAll('.navbar a').forEach(function(link) {
-            if (link.href === window.location.href) {
-                link.classList.add('active');
-            }
-        });
-    </script>
+      <div class="content-section">
+        <h2>Problems &amp Solutions</h2>
+        <p><span class="highlight">Problem 1:</span> The search filter in the games section lacked depth | <span class="highlight">Solution:</span> Introduced topic-based filtering to help users find relevant discussions.</p>
+        <p><span class="highlight">Problem 2:</span> The app was limited to only friends that you knew | <span class="highlight">Solution:</span> Added a feature allowing users to connect with new people who share similar experiences.</p>
+      </div>
+      <div class="content-section">
+        <h2>Takeways</h2>
+        <ul>
+          <li>Designing for connection requires moving beyond functionality to creating engaging, meaningful experiences.</li>
+          <li>User insights are crucial, implimenting changes based on feedback ensures relevance and usability.</li>
+        </ul> 
+      </div>
+  </div>
+  <script>
+    document.querySelectorAll('.navbar a').forEach(function(link) {
+      if (link.href === window.location.href) {
+        link.classList.add('active');
+      }
+    });
+  </script>
 </body>
 </html>
