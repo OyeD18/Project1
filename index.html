@@ -108,12 +108,42 @@
             font-weight: bold;
             color: #8554D4;
         }
-
-        .project-image {
-            width: 100%;
-            border-radius: 8px;
-            margin-bottom: 20px;
-        }
+      
+      .project-image {
+        width: 70%;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        margin-bottom: 10px;
+        
+      }
+      
+      .mid-image {
+        width: 50%;
+        border-radius: 10px;
+        margin-top: 20px;
+      }
+      
+      .image-container {
+        text-align: center;
+        margin: 20px 0;
+      }
+      
+      .flex-image-container {
+        display: flex;
+        justify-content: center;
+        gap: 10px; /* Adds space between images */
+        flex-wrap: wrap; /* Ensures responsiveness */
+        margin: 20px 0;
+      }
+      
+      .video-container video {
+        width: 100%;
+        max-width: 800px;
+        border: 2px solid #8554D4;
+        border-radius: 5px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        margin: 15px 0;
+      }
 
     </style>
 </head>
@@ -133,8 +163,7 @@
           onclick="window.location.href='https://oyed18.github.io/Folio-Projects/'" class="back-button">← Back to Projects</button>
 
         <h1>YAP - Roommate Connection App</h1>
-        <p class="project-summary">A mobile ap designed by university students, for university students to enhance communication and strengthen relationships through interactive, gamified experiences.</p>
-        <img src="yap-project-image.jpg" alt="YAP Project Screenshot" class="project-image">
+        <p class="project-summary">A mobile app designed by university students, for university students to enhance communication and strengthen relationships through interactive, gamified experiences.</p>
         
         <div class="info-section">
             <div class="info-box">
@@ -156,12 +185,14 @@
             <p>My group and I were tasked with finding a unique porblem, and then producing a service or product that would solve this problem for the users.<br>The core problem we aimed to solve was ineffective communication leading to misunderstandings and conflicts. Initially, our focus was on roommates struggling to get along. However, we quickly realized that the need for better communication extended beyond just shared living situations.<br>This led to the development of an interactive app with fun, game-based features designed to help people understand each other better and build meaningful connections. The app aims to break down first impressions, encourage deeper conversations, and promote open-minded interactions.</p>
         </div>
 
-        
-
         <div id="process" class="content-section">
             <h2>Design Process</h2>
             <p>Our early ideas revolved around a general roommate-planning app that included task management and organizational features. However, we noticed our focus was too broad, resulting in disconnected features that failed to address the root causes of roommate conflicts—poor communication and lack of understanding. <br> After reevaluating our approach, we shifted our focus toward fostering connection and meaningful interactions. This shift transformed our app into a platform centered on improving communication rather than just managing roommate logistics.</p>
         </div>
+      
+      <div class="image-container">
+      <h2>Lo-Fi Wireframe</h2>
+      <img src="lo-fi.png" alt="Lo-Fi Wireframe" class="project-image">
       
       <div class="content-section">
             <h2>Core Features</h2>
@@ -174,7 +205,10 @@
           <p>Users can set and track goals or events such as cooking together, fitness challenges, or hobby exploration. Celebrating small wins together helps build a sense of teamwork and collaboration.</p>
         </ol>
         </div>
-
+      
+      <div class="image-container">
+      <img src="Product.png" alt="final-look" class="mid-image">
+      
         <div id="solution" class="content-section">
             <h2>Prototyping &amp Design Insights</h2>
             <p>We began with low-fidelity prototypes, focusing on structure and functionality.</p>
@@ -189,6 +223,11 @@
         <p><span class="highlight">Problem 1:</span> The search filter in the games section lacked depth | <span class="highlight">Solution:</span> Introduced topic-based filtering to help users find relevant discussions.</p>
         <p><span class="highlight">Problem 2:</span> The app was limited to only friends that you knew | <span class="highlight">Solution:</span> Added a feature allowing users to connect with new people who share similar experiences.</p>
       </div>
+      
+      <div class="flex-image-container">
+      <img src="HiFi.png" alt="Hi-Fi Wireframe" class="project-image">
+      <img src="Flow.png" alt="Flow Wireframe" class="project-image">
+      
       <div class="content-section">
         <h2>Takeways</h2>
         <ul>
@@ -196,6 +235,16 @@
           <li>User insights are crucial, implimenting changes based on feedback ensures relevance and usability.</li>
         </ul> 
       </div>
+     
+      <div class="preview">
+        <h2>Product Preview</h2>
+        <div class="video-container">
+          <video controls>
+            <source src="Prototype_Walkthrough.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+
   </div>
   <script>
     document.querySelectorAll('.navbar a').forEach(function(link) {
